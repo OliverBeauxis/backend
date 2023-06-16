@@ -22,44 +22,4 @@ Tento projekt je ukázkou jednoduché aplikace pro práci s databází, která i
 
 ## UML diagram
 
-+----------------------------------+
-|          design.php              |
-+----------------------------------+
-|                                  |
-|   Zobrazování dat v HTML tabulce |
-|                                  |
-+----------------------------------+
-
-              ^
-              |
-              | Zahrnuje
-              |
-              v
-
-+----------------------------------+
-|          index.php               |
-+----------------------------------+
-|                                  |
-|   Řídicí program                 |
-|                                  |
-|   - Připojení k databázi         |
-|   - Načítání dat z databáze      |
-|   - Zpracování dat a předání     |
-|     design.php pro zobrazení     |
-|                                  |
-+----------------------------------+
-
-              ^
-              |
-              | Implementuje
-              |
-              v
-
-+-----------------------+        +-----------------------+
-|          IDB          |        |         MySQL         |
-+-----------------------+        +-----------------------+
-|                       |        |                       |
-|   Rozhraní pro práci  |        |   Implementace        |
-|   s databází          |        |   MySQL driveru       |
-|                       |        |                       |
-+-----------------------+        +-----------------------+
+![](uml.JPG)
